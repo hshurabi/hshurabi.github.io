@@ -525,6 +525,7 @@ a:hover {
 
 .contact-info,
 .contact-form-section {
+  display: flex;
   flex: 1 1 400px;
 }
 
