@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Dr. Hamed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Dr. Hamed</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html" class="active">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-content">
+            <div class="search-header">
+                <input type="text" placeholder="Search publications, research, and more..." id="searchInput">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h1>Research</h1>
+                <p>Exploring the frontiers of computational science and data analytics</p>
+            </section>
+
+            <section class="research-overview">
+                <h2>Research Overview</h2>
+                <p>My research focuses on developing innovative computational methods and data-driven approaches to solve complex problems across multiple domains. I lead a dynamic research group that bridges theoretical computer science with practical applications in various industries.</p>
+            </section>
+
+            <section class="research-projects">
+                <h2>Current Research Projects</h2>
+                
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Advanced Machine Learning for Healthcare</h3>
+                            <span class="project-status ongoing">Ongoing</span>
+                        </div>
+                        <p>Developing novel deep learning architectures for medical image analysis and diagnostic prediction. This project involves collaboration with medical professionals and has shown promising results in early disease detection.</p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                        <div class="project-funding">
+                            <strong>Funding:</strong> NIH Grant R01 - $2.5M (2022-2026)
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Scalable Data Analytics Platform</h3>
+                            <span class="project-status ongoing">Ongoing</span>
+                        </div>
+                        <p>Creating a distributed computing framework for processing large-scale datasets in real-time. The platform is designed to handle petabyte-scale data with minimal latency and maximum efficiency.</p>
+                        <div class="project-tags">
+                            <span class="tag">Big Data</span>
+                            <span class="tag">Distributed Systems</span>
+                            <span class="tag">Cloud Computing</span>
+                        </div>
+                        <div class="project-funding">
+                            <strong>Funding:</strong> NSF Award - $1.8M (2023-2027)
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Quantum-Classical Hybrid Algorithms</h3>
+                            <span class="project-status ongoing">Ongoing</span>
+                        </div>
+                        <p>Investigating the potential of quantum computing for optimization problems by developing hybrid algorithms that leverage both quantum and classical computing paradigms.</p>
+                        <div class="project-tags">
+                            <span class="tag">Quantum Computing</span>
+                            <span class="tag">Optimization</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                        <div class="project-funding">
+                            <strong>Funding:</strong> DOE Quantum Initiative - $1.2M (2023-2026)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="research-areas">
+                <h2>Research Areas</h2>
+                <div class="areas-grid">
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Advanced neural networks, deep learning architectures, and AI applications in real-world scenarios.</p>
+                    </div>
+
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Science</h3>
+                        <p>Big data analytics, statistical modeling, and data mining techniques for extracting insights from complex datasets.</p>
+                    </div>
+
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <h3>Quantum Computing</h3>
+                        <p>Quantum algorithms, quantum machine learning, and hybrid quantum-classical optimization methods.</p>
+                    </div>
+
+                    <div class="area-card">
+                        <div class="area-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Distributed Systems</h3>
+                        <p>Scalable computing architectures, cloud-based solutions, and high-performance computing platforms.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lab-info">
+                <h2>Research Lab</h2>
+                <div class="lab-details">
+                    <div class="lab-description">
+                        <h3>Computational Intelligence Lab</h3>
+                        <p>Our lab is equipped with state-of-the-art computing resources including GPU clusters, quantum computing simulators, and high-performance workstations. We foster a collaborative environment where students and researchers work together on cutting-edge projects.</p>
+                        
+                        <div class="lab-stats">
+                            <div class="stat">
+                                <h4>15+</h4>
+                                <p>Graduate Students</p>
+                            </div>
+                            <div class="stat">
+                                <h4>5+</h4>
+                                <p>Postdocs</p>
+                            </div>
+                            <div class="stat">
+                                <h4>3+</h4>
+                                <p>Visiting Scholars</p>
+                            </div>
+                            <div class="stat">
+                                <h4>$8M+</h4>
+                                <p>Total Funding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dr. Hamed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

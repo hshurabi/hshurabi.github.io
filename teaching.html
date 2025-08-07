@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching - Dr. Hamed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Dr. Hamed</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="teaching.html" class="active">Teaching</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-content">
+            <div class="search-header">
+                <input type="text" placeholder="Search publications, research, and more..." id="searchInput">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h1>Teaching</h1>
+                <p>Inspiring the next generation of computer scientists and researchers</p>
+            </section>
+
+            <section class="teaching-philosophy">
+                <h2>Teaching Philosophy</h2>
+                <div class="philosophy-content">
+                    <p>I believe in fostering a learning environment that combines rigorous academic content with hands-on practical experience. My teaching approach emphasizes critical thinking, problem-solving, and the application of theoretical concepts to real-world challenges. I strive to make complex topics accessible while maintaining the depth necessary for advanced understanding.</p>
+                    
+                    <div class="philosophy-principles">
+                        <div class="principle">
+                            <div class="principle-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Active Learning</h4>
+                            <p>Encouraging student participation through interactive discussions, group projects, and hands-on coding sessions.</p>
+                        </div>
+                        <div class="principle">
+                            <div class="principle-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <h4>Problem-Based Learning</h4>
+                            <p>Using real-world problems to motivate learning and demonstrate the practical relevance of theoretical concepts.</p>
+                        </div>
+                        <div class="principle">
+                            <div class="principle-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Inclusive Environment</h4>
+                            <p>Creating a supportive classroom where all students feel valued and can contribute to discussions regardless of their background.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="current-courses">
+                <h2>Current Courses (Fall 2024)</h2>
+                
+                <div class="course-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h3>CS 785: Advanced Machine Learning</h3>
+                            <span class="course-level graduate">Graduate</span>
+                        </div>
+                        <div class="course-details">
+                            <p class="course-time"><i class="fas fa-clock"></i> Tue/Thu 2:00-3:30 PM</p>
+                            <p class="course-location"><i class="fas fa-map-marker-alt"></i> Engineering Hall 301</p>
+                            <p class="course-students"><i class="fas fa-users"></i> 45 students</p>
+                        </div>
+                        <p class="course-description">Advanced topics in machine learning including deep learning architectures, reinforcement learning, and recent developments in neural network research. Students will implement state-of-the-art algorithms and work on original research projects.</p>
+                        <div class="course-topics">
+                            <span class="topic-tag">Deep Learning</span>
+                            <span class="topic-tag">Reinforcement Learning</span>
+                            <span class="topic-tag">Neural Networks</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h3>CS 350: Data Structures and Algorithms</h3>
+                            <span class="course-level undergraduate">Undergraduate</span>
+                        </div>
+                        <div class="course-details">
+                            <p class="course-time"><i class="fas fa-clock"></i> MWF 10:00-11:00 AM</p>
+                            <p class="course-location"><i class="fas fa-map-marker-alt"></i> Computer Science Building 150</p>
+                            <p class="course-students"><i class="fas fa-users"></i> 120 students</p>
+                        </div>
+                        <p class="course-description">Fundamental data structures and algorithms essential for computer science. Covers analysis of algorithms, sorting, searching, graph algorithms, and dynamic programming with emphasis on implementation and efficiency analysis.</p>
+                        <div class="course-topics">
+                            <span class="topic-tag">Data Structures</span>
+                            <span class="topic-tag">Algorithm Analysis</span>
+                            <span class="topic-tag">Graph Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="past-courses">
+                <h2>Recent Courses</h2>
+                
+                <div class="courses-by-semester">
+                    <div class="semester-section">
+                        <h3>Spring 2024</h3>
+                        <ul class="course-list">
+                            <li>
+                                <strong>CS 890: Quantum Machine Learning</strong> (Graduate Seminar)
+                                <span class="course-rating">4.8/5.0 ⭐</span>
+                            </li>
+                            <li>
+                                <strong>CS 480: Introduction to Artificial Intelligence</strong> (Undergraduate)
+                                <span class="course-rating">4.6/5.0 ⭐</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        <h3>Fall 2023</h3>
+                        <ul class="course-list">
+                            <li>
+                                <strong>CS 785: Advanced Machine Learning</strong> (Graduate)
+                                <span class="course-rating">4.9/5.0 ⭐</span>
+                            </li>
+                            <li>
+                                <strong>CS 350: Data Structures and Algorithms</strong> (Undergraduate)
+                                <span class="course-rating">4.7/5.0 ⭐</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="semester-section">
+                        <h3>Spring 2023</h3>
+                        <ul class="course-list">
+                            <li>
+                                <strong>CS 760: Machine Learning</strong> (Graduate)
+                                <span class="course-rating">4.8/5.0 ⭐</span>
+                            </li>
+                            <li>
+                                <strong>CS 540: Introduction to Artificial Intelligence</strong> (Undergraduate)
+                                <span class="course-rating">4.5/5.0 ⭐</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="student-supervision">
+                <h2>Student Supervision</h2>
+                
+                <div class="supervision-stats">
+                    <div class="stat-card">
+                        <h3>15</h3>
+                        <p>Current Ph.D. Students</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>8</h3>
+                        <p>Ph.D. Graduates</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>25</h3>
+                        <p>Master's Graduates</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>40+</h3>
+                        <p>Undergraduate Researchers</p>
+                    </div>
+                </div>
+
+                <div class="supervision-details">
+                    <h3>Recent Ph.D. Graduates</h3>
+                    <div class="graduate-list">
+                        <div class="graduate-item">
+                            <div class="graduate-info">
+                                <h4>Dr. Sarah Johnson</h4>
+                                <p class="graduation-date">Graduated: May 2024</p>
+                                <p class="dissertation">Dissertation: "Federated Learning for Privacy-Preserving Healthcare Analytics"</p>
+                                <p class="current-position">Current Position: Senior Research Scientist, Google AI</p>
+                            </div>
+                        </div>
+
+                        <div class="graduate-item">
+                            <div class="graduate-info">
+                                <h4>Dr. Michael Chen</h4>
+                                <p class="graduation-date">Graduated: December 2023</p>
+                                <p class="dissertation">Dissertation: "Quantum-Enhanced Optimization Algorithms for Large-Scale Problems"</p>
+                                <p class="current-position">Current Position: Assistant Professor, Carnegie Mellon University</p>
+                            </div>
+                        </div>
+
+                        <div class="graduate-item">
+                            <div class="graduate-info">
+                                <h4>Dr. Emily Rodriguez</h4>
+                                <p class="graduation-date">Graduated: May 2023</p>
+                                <p class="dissertation">Dissertation: "Interpretable Machine Learning for Medical Diagnosis"</p>
+                                <p class="current-position">Current Position: Principal Data Scientist, Microsoft Research</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="teaching-recognition">
+                <h2>Teaching Recognition</h2>
+                
+                <div class="recognition-grid">
+                    <div class="recognition-item">
+                        <div class="recognition-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="recognition-content">
+                            <h4>Outstanding Faculty Teaching Award</h4>
+                            <p class="recognition-year">2023</p>
+                            <p>University-wide recognition for excellence in undergraduate and graduate instruction.</p>
+                        </div>
+                    </div>
+
+                    <div class="recognition-item">
+                        <div class="recognition-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="recognition-content">
+                            <h4>Excellence in Graduate Teaching</h4>
+                            <p class="recognition-year">2020, 2022</p>
+                            <p>Departmental award for innovative teaching methods and student mentorship.</p>
+                        </div>
+                    </div>
+
+                    <div class="recognition-item">
+                        <div class="recognition-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="recognition-content">
+                            <h4>Student's Choice Award</h4>
+                            <p class="recognition-year">2019, 2021, 2023</p>
+                            <p>Voted by students as the most inspiring and effective instructor.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="student-testimonials">
+                <h2>Student Testimonials</h2>
+                
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Dr. Hamed's advanced machine learning course completely changed my perspective on AI research. His ability to explain complex concepts clearly while connecting them to cutting-edge research is truly exceptional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Jessica M.</strong> - Ph.D. Student
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The data structures course with Dr. Hamed was challenging but incredibly rewarding. His practical examples and interactive coding sessions made difficult algorithms much easier to understand and implement."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>David L.</strong> - Undergraduate Student
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"As my advisor, Dr. Hamed provided invaluable guidance throughout my Ph.D. His mentorship extended beyond research to career development and helped me land my dream job in industry."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Dr. Sarah Johnson</strong> - Former Ph.D. Student
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dr. Hamed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Dr. Hamed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Dr. Hamed</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html" class="active">Publications</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-content">
+            <div class="search-header">
+                <input type="text" placeholder="Search publications, research, and more..." id="searchInput">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h1>Publications</h1>
+                <p>A comprehensive list of research publications and scholarly work</p>
+            </section>
+
+            <section class="publication-stats">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>150+</h3>
+                        <p>Total Publications</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>8,500+</h3>
+                        <p>Citations</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>45</h3>
+                        <p>H-Index</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>25+</h3>
+                        <p>Journal Articles</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="publications-section">
+                <div class="publication-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="journal">Journal Articles</button>
+                    <button class="filter-btn" data-filter="conference">Conference Papers</button>
+                    <button class="filter-btn" data-filter="book">Book Chapters</button>
+                </div>
+
+                <div class="publications-list">
+                    <div class="publication-year">
+                        <h2>2024</h2>
+                        
+                        <div class="publication-item journal">
+                            <div class="publication-content">
+                                <h3>Advanced Neural Architectures for Real-time Medical Image Analysis</h3>
+                                <p class="authors"><strong>Hamed, A.</strong>, Johnson, M., Smith, R., & Chen, L.</p>
+                                <p class="venue">Nature Machine Intelligence, vol. 15, pp. 234-248, 2024</p>
+                                <div class="publication-actions">
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-external-link-alt"></i> View Paper
+                                    </a>
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-file-pdf"></i> PDF
+                                    </a>
+                                    <span class="citation-count">85 citations</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item conference">
+                            <div class="publication-content">
+                                <h3>Quantum-Enhanced Optimization Algorithms for Large-Scale Problems</h3>
+                                <p class="authors"><strong>Hamed, A.</strong>, Williams, K., & Brown, D.</p>
+                                <p class="venue">Proceedings of the International Conference on Machine Learning (ICML), pp. 1-12, 2024</p>
+                                <div class="publication-actions">
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-external-link-alt"></i> View Paper
+                                    </a>
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-file-pdf"></i> PDF
+                                    </a>
+                                    <span class="citation-count">42 citations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-year">
+                        <h2>2023</h2>
+                        
+                        <div class="publication-item journal">
+                            <div class="publication-content">
+                                <h3>Scalable Distributed Computing Framework for Big Data Analytics</h3>
+                                <p class="authors"><strong>Hamed, A.</strong>, Davis, S., Wilson, P., & Thompson, J.</p>
+                                <p class="venue">IEEE Transactions on Parallel and Distributed Systems, vol. 34, no. 8, pp. 2145-2158, 2023</p>
+                                <div class="publication-actions">
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-external-link-alt"></i> View Paper
+                                    </a>
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-file-pdf"></i> PDF
+                                    </a>
+                                    <span class="citation-count">156 citations</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item conference">
+                            <div class="publication-content">
+                                <h3>Deep Learning Approaches for Predictive Healthcare Analytics</h3>
+                                <p class="authors">Garcia, M., <strong>Hamed, A.</strong>, & Lee, H.</p>
+                                <p class="venue">Neural Information Processing Systems (NeurIPS), pp. 8234-8245, 2023</p>
+                                <div class="publication-actions">
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-external-link-alt"></i> View Paper
+                                    </a>
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-file-pdf"></i> PDF
+                                    </a>
+                                    <span class="citation-count">203 citations</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item book">
+                            <div class="publication-content">
+                                <h3>Computational Methods in Modern Data Science</h3>
+                                <p class="authors"><strong>Hamed, A.</strong></p>
+                                <p class="venue">Chapter 12 in "Advanced Computational Techniques", Springer, pp. 234-267, 2023</p>
+                                <div class="publication-actions">
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-external-link-alt"></i> View Chapter
+                                    </a>
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-file-pdf"></i> PDF
+                                    </a>
+                                    <span class="citation-count">67 citations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="publication-year">
+                        <h2>2022</h2>
+                        
+                        <div class="publication-item journal">
+                            <div class="publication-content">
+                                <h3>Machine Learning Security: Adversarial Attacks and Defenses</h3>
+                                <p class="authors">Kumar, R., <strong>Hamed, A.</strong>, Martinez, C., & Singh, A.</p>
+                                <p class="venue">Journal of Machine Learning Research, vol. 23, article 145, pp. 1-47, 2022</p>
+                                <div class="publication-actions">
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-external-link-alt"></i> View Paper
+                                    </a>
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-file-pdf"></i> PDF
+                                    </a>
+                                    <span class="citation-count">312 citations</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-item conference">
+                            <div class="publication-content">
+                                <h3>Federated Learning for Privacy-Preserving Healthcare Applications</h3>
+                                <p class="authors"><strong>Hamed, A.</strong>, Park, J., & Anderson, T.</p>
+                                <p class="venue">International Conference on Artificial Intelligence in Medicine (AIME), pp. 123-135, 2022</p>
+                                <div class="publication-actions">
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-external-link-alt"></i> View Paper
+                                    </a>
+                                    <a href="#" class="pub-link">
+                                        <i class="fas fa-file-pdf"></i> PDF
+                                    </a>
+                                    <span class="citation-count">189 citations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="load-more">
+                        <button class="btn btn-secondary">Load More Publications</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dr. Hamed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/publications.js"></script>
+</body>
+</html>

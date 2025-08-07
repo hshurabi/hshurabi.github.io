@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dr. Hamed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Dr. Hamed</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-content">
+            <div class="search-header">
+                <input type="text" placeholder="Search publications, research, and more..." id="searchInput">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h1>Contact Information</h1>
+                <p>Get in touch for research collaborations, speaking engagements, or academic inquiries</p>
+            </section>
+
+            <section class="contact-section">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Office Information</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Address</h4>
+                                <p>Computer Science Building, Room 421<br>
+                                University Avenue<br>
+                                City, State 12345</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:hamed@university.edu">hamed@university.edu</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Tuesdays & Thursdays<br>
+                                2:00 PM - 4:00 PM<br>
+                                <em>Or by appointment</em></p>
+                            </div>
+                        </div>
+
+                        <div class="social-links-contact">
+                            <h4>Professional Profiles</h4>
+                            <div class="social-grid">
+                                <a href="#" class="social-link-contact linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn Profile</span>
+                                </a>
+                                <a href="#" class="social-link-contact github">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub Repository</span>
+                                </a>
+                                <a href="#" class="social-link-contact scholar">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Google Scholar</span>
+                                </a>
+                                <a href="#" class="social-link-contact orcid">
+                                    <i class="fab fa-orcid"></i>
+                                    <span>ORCID Profile</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h2>Send a Message</h2>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="affiliation">Affiliation/Organization</label>
+                                <input type="text" id="affiliation" name="affiliation">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="research">Research Collaboration</option>
+                                    <option value="speaking">Speaking Engagement</option>
+                                    <option value="student">Prospective Student</option>
+                                    <option value="media">Media Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="directions-section">
+                <h2>Directions & Campus Map</h2>
+                <div class="directions-content">
+                    <div class="directions-info">
+                        <h3>Getting to Campus</h3>
+                        <div class="direction-item">
+                            <h4><i class="fas fa-car"></i> By Car</h4>
+                            <p>The university is accessible via Highway 101. Take Exit 25 (University Avenue) and follow signs to the Computer Science Building. Visitor parking is available in Lot C.</p>
+                        </div>
+
+                        <div class="direction-item">
+                            <h4><i class="fas fa-bus"></i> Public Transportation</h4>
+                            <p>Take Metro Bus Line 42 or 58 to the University Station. The Computer Science Building is a 5-minute walk from the station.</p>
+                        </div>
+
+                        <div class="direction-item">
+                            <h4><i class="fas fa-plane"></i> Flying In</h4>
+                            <p>The nearest airport is City International Airport (CIA), approximately 20 minutes by taxi or rideshare to campus.</p>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <div class="map-container">
+                            <i class="fas fa-map"></i>
+                            <h4>Interactive Campus Map</h4>
+                            <p>Click to view the full campus map and building locations</p>
+                            <a href="#" class="btn btn-secondary">View Campus Map</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quick-links">
+                <h2>Quick Links</h2>
+                <div class="quick-links-grid">
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>Schedule Appointment</h4>
+                        <p>Book a meeting using my online calendar system</p>
+                    </a>
+
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-download"></i>
+                        <h4>Download CV</h4>
+                        <p>Get the latest version of my curriculum vitae</p>
+                    </a>
+
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Join My Lab</h4>
+                        <p>Information for prospective students and researchers</p>
+                    </a>
+
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-newspaper"></i>
+                        <h4>Latest Publications</h4>
+                        <p>Browse my recent research publications and papers</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dr. Hamed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
