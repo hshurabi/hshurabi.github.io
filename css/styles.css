@@ -646,3 +646,8 @@ a:hover {
   margin: 0; /* remove default margin */
 }
 
+.contact-form label,
+.contact-form-section h2,
+.contact-form .form-group label {
+    color: #000 !important;
+}
