@@ -631,3 +631,51 @@ a:hover {
 .btn-primary:hover {
   background-color: #0056b3;
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  .contact-form {
+    background: #1e1e1e;
+    color: #f0f0f0;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border: 1px solid #555;
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #bbb;
+  }
+
+  .form-group label {
+    color: #f0f0f0;
+  }
+
+  .btn-primary {
+    background-color: #3399ff;
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background-color: #2277cc;
+  }
+
+  .social-link-contact,
+  .contact-details a {
+    color: #90caf9;
+  }
+
+  .social-link-contact:hover,
+  .contact-details a:hover {
+    color: #ffffff;
+  }
+}
+
