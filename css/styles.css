@@ -678,4 +678,18 @@ a:hover {
     color: #ffffff;
   }
 }
+.header-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between icon and header */
+}
+
+.header-with-icon i {
+  font-size: 1.2em; /* adjust as needed */
+  color: #d32f2f;   /* or any color you want */
+}
+
+.header-with-icon h3 {
+  margin: 0; /* remove default margin */
+}
 
