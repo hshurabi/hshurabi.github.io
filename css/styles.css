@@ -737,3 +737,25 @@ a:hover {
     position: relative;
   }
 }
+/* Book a call section */
+.book-meeting-section {
+  margin: 32px 0;
+  padding: 24px;
+  background: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  text-align: center;
+}
+.book-meeting-section h2 {
+  margin-bottom: 12px;
+}
+.book-meeting-section p {
+  margin-bottom: 18px;
+}
+.book-meeting-section .btn {
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
