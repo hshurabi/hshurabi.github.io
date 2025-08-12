@@ -36,6 +36,7 @@ const searchModal = document.getElementById('searchModal');
 const searchClose = document.getElementById('searchClose');
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
+
 function openSearchModal() {
     searchModal.classList.add('active');
     searchInput.focus();
@@ -81,31 +82,6 @@ function performSearch(query) {
     } else {
         searchResults.innerHTML = '';
     }
-}
-
-    const results = searchData.filter(item =>
-        item.title.toLowerCase().includes(query.toLowerCase()) ||
-        item.description.toLowerCase().includes(query.toLowerCase()) ||
-        item.type.toLowerCase().includes(query.toLowerCase())
-    );
-
-    if (results.length === 0) {
-        searchResults.innerHTML = '<p style="padding: 1rem; color: var(--text-secondary); text-align: center;">No results found.</p>';
-        return;
-    }
-
-    const resultsHTML = results.map(item => `
-        <div class="search-result-item" style="padding: 1rem; border-bottom: 1px solid var(--border-color); cursor: pointer;" onclick="window.location.href='${item.url}'">
-            <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);">${item.title}</h4>
-            <p style="margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">${item.description}</p>
-            <div style="display: flex; gap: 1rem; font-size: 0.8rem; color: var(--text-muted);">
-                <span style="background: var(--bg-tertiary); padding: 0.25rem 0.5rem; border-radius: 0.25rem;">${item.type}</span>
-                ${item.year ? `<span>${item.year}</span>` : ''}
-            </div>
-        </div>
-    `).join('');
-
-    searchResults.innerHTML = resultsHTML;
 }
 
 // Event listeners
