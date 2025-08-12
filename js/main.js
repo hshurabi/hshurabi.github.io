@@ -36,37 +36,6 @@ const searchModal = document.getElementById('searchModal');
 const searchClose = document.getElementById('searchClose');
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
-
-// Sample search data
-const searchData = [
-    {
-        title: "Advanced Neural Architectures for Real-time Medical Image Analysis",
-        type: "publication",
-        year: "2024",
-        description: "Research on neural networks for medical imaging applications",
-        url: "publications.html"
-    },
-    {
-        title: "Quantum-Enhanced Optimization Algorithms",
-        type: "publication",
-        year: "2024",
-        description: "Novel quantum computing approaches for optimization",
-        url: "publications.html"
-    },
-    {
-        title: "Advanced Machine Learning for Healthcare",
-        type: "research",
-        description: "Current research project on ML applications in healthcare",
-        url: "research.html"
-    },
-    {
-        title: "Scalable Data Analytics Platform",
-        type: "research",
-        description: "Distributed computing framework for large-scale data processing",
-        url: "research.html"
-    }
-];
-
 function openSearchModal() {
     searchModal.classList.add('active');
     searchInput.focus();
@@ -81,10 +50,38 @@ function closeSearchModal() {
 }
 
 function performSearch(query) {
-    if (!query.trim()) {
-        searchResults.innerHTML = '<p style="padding: 1rem; color: var(--text-secondary); text-align: center;">Start typing to search...</p>';
-        return;
+    // Get all publication and research items
+    const publicationItems = document.querySelectorAll('.publication-item');
+    const researchAreas = document.querySelectorAll('.area-card');
+
+    let found = false;
+
+    // Hide all items first
+    publicationItems.forEach(item => {
+        if (item.textContent.toLowerCase().includes(query.toLowerCase())) {
+            item.style.display = 'list-item';
+            found = true;
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    researchAreas.forEach(area => {
+        if (area.textContent.toLowerCase().includes(query.toLowerCase())) {
+            area.style.display = '';
+            found = true;
+        } else {
+            area.style.display = 'none';
+        }
+    });
+
+    // Show a message if nothing found
+    if (!found) {
+        searchResults.innerHTML = '<p style="padding: 1rem; color: var(--text-secondary); text-align: center;">No results found.</p>';
+    } else {
+        searchResults.innerHTML = '';
     }
+}
 
     const results = searchData.filter(item =>
         item.title.toLowerCase().includes(query.toLowerCase()) ||
