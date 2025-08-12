@@ -759,3 +759,16 @@ a:hover {
   align-items: center;
   gap: 8px;
 }
+
+/* Add spacing between main sections on the research page */
+.page-header,
+.research-projects,
+.research-areas {
+  margin-bottom: 48px;
+}
+
+.area-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Adjust spacing between icon and title */
+}
