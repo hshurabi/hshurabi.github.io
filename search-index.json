@@ -18,5 +18,166 @@
         "title":"Teaching",
         "snippet":"Information about my teaching experience and courses...",
         "url":"teaching.html"
-    }
+    },
+
+
+
+
+
+
+
+
+
+  {
+    "title": "Classification-augmented survival estimation (CASE): A novel method for individualized long-term survival prediction with application to liver transplantation",
+    "snippet": "Shourabizadeh H., Aleman D. M., Rousseau L. M., Zheng K., Bhat M. — PloS One",
+    "url": "publications.html#case"
+  },
+  {
+    "title": "Differential Impact of CD34+ Cell Dose for Different Age Groups in Allogeneic Hematopoietic Cell Transplantation for Acute Leukemia: A Machine Learning-Based Discovery",
+    "snippet": "Qu Y., Shourabizadeh H., Subramanian A., Aleman D. M., Rousseau L. M., Law A. D., Viswabandya A., Michelis F. V. — Experimental Hematology",
+    "url": "publications.html#cd34"
+  },
+  {
+    "title": "Healthcare Inventory Management in the Presence of Supply Disruption and a Reliable Secondary Supply Channel",
+    "snippet": "Shourabizadeh H., Kundakcioglu O. E., Bozkir C. D. C., Tufekci M. B. — Annals of Operations Research",
+    "url": "publications.html#inventory"
+  },
+  {
+    "title": "Machine learning for the prediction of outcomes post-allogeneic hematopoietic cell transplantation: A single-center experience",
+    "snippet": "Shourabizadeh H., Aleman D. M., Rousseau L. M., Law A. D., Viswabandya A., Michelis F. V. — Acta Haematologica",
+    "url": "publications.html#ml-hct"
+  },
+  {
+    "title": "An approach for predicting employee churn by using data mining",
+    "snippet": "Yiğit I.O., Shourabizadeh H. — International Artificial Intelligence and Data Processing Symposium (IDAP)",
+    "url": "publications.html#churn"
+  },
+  {
+    "title": "Machine Learning to Predict Graft Survival Following Liver Transplantation",
+    "snippet": "Zheng K., Shourabizadeh H., Aleman D. M., Rousseau L. M., Bhat M. — Transplantation",
+    "url": "publications.html#graft-survival"
+  },
+  {
+    "title": "Rethinking survival model evaluation: The limits of C-Index and the case for the area under the survival curve",
+    "snippet": "Work in Progress",
+    "url": "publications.html#wip-cindex"
+  },
+  {
+    "title": "The economics of lapse: How machine learning can optimize policyholder retention in life insurance",
+    "snippet": "Work in Progress",
+    "url": "publications.html#wip-lapse"
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    "title": "MIE1624: Introduction to Data Science",
+    "snippet": "University of Toronto (Graduate, Teaching Assistant), 2020-2022. Rating: 4.8/5.0",
+    "url": "teaching.html#mie1624"
+  },
+  {
+    "title": "MIE1623: Introduction to Healthcare Engineering",
+    "snippet": "University of Toronto (Graduate, Teaching Assistant), 2019-2020",
+    "url": "teaching.html#mie1623"
+  },
+  {
+    "title": "MIE1620: Linear Programming and Network Flow",
+    "snippet": "University of Toronto (Graduate, Teaching Assistant), 2020",
+    "url": "teaching.html#mie1620"
+  },
+  {
+    "title": "MIE262 - Operations Research I",
+    "snippet": "University of Toronto (Undergraduate, Teaching Assistant), 2018-2022. Rating: 4.8/5.0",
+    "url": "teaching.html#mie262-or1"
+  },
+  {
+    "title": "MIE262 - Operations Research III",
+    "snippet": "University of Toronto (Undergraduate, Teaching Assistant), 2019-2021",
+    "url": "teaching.html#mie262-or3"
+  },
+  {
+    "title": "IE201: Linear Programming",
+    "snippet": "Özyeğin University (Undergraduate, Teaching Assistant)",
+    "url": "teaching.html#ie201"
+  },
+  {
+    "title": "IE342: Mathematical Modeling",
+    "snippet": "Özyeğin University (Undergraduate, Teaching Assistant)",
+    "url": "teaching.html#ie342"
+  },
+  {
+    "title": "IE534: Advanced Probability and Statistics",
+    "snippet": "Özyeğin University (Graduate, Teaching Assistant)",
+    "url": "teaching.html#ie534"
+  },
+  {
+    "title": "MATH216: Statistics",
+    "snippet": "Özyeğin University (Undergraduate, Teaching Assistant)",
+    "url": "teaching.html#math216"
+  },
+  {
+    "title": "Engineering Statistics",
+    "snippet": "IUST (Graduate, Teaching Assistant)",
+    "url": "teaching.html#eng-statistics"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  {
+    "title": "Predictive Analytics in Actuarial Science",
+    "snippet": "Machine learning models to predict customer lapse in life insurance, using XGBoost and SHAP for explainability and actionable insights.",
+    "url": "research.html#predictive-analytics"
+  },
+  {
+    "title": "Counterfactual Optimization for Bone Marrow Transplant Matching",
+    "snippet": "Machine learning tools to predict bone marrow transplant success, transforming predictions into individualized survival probabilities for clinical decision support.",
+    "url": "research.html#bmt-matching"
+  },
+  {
+    "title": "Evaluating Survival Models Beyond the C-Index",
+    "snippet": "Developing robust evaluation frameworks for survival analysis, introducing new metrics such as Area Under the Survival Curve (AUSC).",
+    "url": "research.html#survival-eval"
+  },
+  {
+    "title": "Healthcare Analytics",
+    "snippet": "Survival modeling, transplant decision support, and hospital resource optimization using machine learning and operations research.",
+    "url": "research.html#healthcare-analytics"
+  },
+  {
+    "title": "Predictive Modeling",
+    "snippet": "Developing risk prediction models for churn, lapse, and default in insurance, workforce analytics, and finance.",
+    "url": "research.html#predictive-modeling"
+  },
+  {
+    "title": "Decision Optimization",
+    "snippet": "Bridging machine learning and operations research to derive actionable, cost-effective interventions from predictive models.",
+    "url": "research.html#decision-optimization"
+  },
+  {
+    "title": "Explainable AI",
+    "snippet": "Designing practical interpretability tools for survival models and domain-specific diagnostics in high-stakes settings.",
+    "url": "research.html#explainable-ai"
+  }
 ]
