@@ -685,6 +685,10 @@ a:hover {
   font-size: 1.1rem;
   border-radius: 8px;
   margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
 }
 
 /* Responsive Design */
