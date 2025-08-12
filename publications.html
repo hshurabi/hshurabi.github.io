@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Hamed Shourabizadeh</h1>
+            </div>
+            <div class="hamburger" id="hamburgerMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html" class="active">Publications</a></li>
+                    <!-- <li><a href="awards.html">Awards</a></li> -->
+                    <!-- <li><a href="service.html">Service</a></li> -->
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-content">
+            <div class="search-header">
+                <input type="text" placeholder="Search publications, research, and more..." id="searchInput">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h1>Publications</h1>
+                <!-- <h3>Journal Articles</h3> -->
+            </section>
+
+            <section class="publications-section">
+                <div class="publication-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="journal">Journal Articles</button>
+                    <button class="filter-btn" data-filter="conference">Conference Papers</button>
+                    <button class="filter-btn" data-filter="work-in-progress">Work in Progress</button>
+                </div>
+
+                <div class="publications-list">
+                    <div class="publication-item journal">
+                        <strong>Classification-augmented survival estimation (CASE): A novel method for individualized long-term survival prediction with application to liver transplantation</strong><br>
+                        Shourabizadeh H., Aleman D. M., Rousseau L. M., Zheng K., Bhat M.<br>
+                        PloS One<br>
+                        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0315928" target="_blank">Download & Cite</a>
+                    </div>
+                    <div class="publication-item journal">
+                        <strong>Differential Impact of CD34+ Cell Dose for Different Age Groups in Allogeneic Hematopoietic Cell Transplantation for Acute Leukemia: A Machine Learning-Based Discovery</strong><br>
+                        Qu Y., Shourabizadeh H., Subramanian A., Aleman D. M., Rousseau L. M., Law A. D., Viswabandya A., Michelis F. V.<br>
+                        Experimental Hematology<br>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0301472X24005496" target="_blank">Download & Cite</a>
+                    </div>
+                    <div class="publication-item journal">
+                        <strong>Healthcare Inventory Management in the Presence of Supply Disruption and a Reliable Secondary Supply Channel</strong><br>
+                        Shourabizadeh H., Kundakcioglu O. E., Bozkir C. D. C. Bozkir, Tufekci M. B.<br>
+                        Annals of Operations Research<br>
+                        <a href="https://link.springer.com/article/10.1007/s10479-023-05620-y" target="_blank">Download & Cite</a>
+                    </div>
+                    <div class="publication-item journal">
+                        <strong>Machine learning for the prediction of outcomes post-allogeneic hematopoietic cell transplantation: A single-center experience</strong><br>
+                        Shourabizadeh H., Aleman D. M., Rousseau L. M., Law A. D., Viswabandya A., Michelis F. V.<br>
+                        Acta Haematologica<br>
+                        <a href="https://karger.com/aha/article-abstract/147/3/280/863445/Machine-Learning-for-the-Prediction-of-Survival?redirectedFrom=fulltext" target="_blank">Download & Cite</a>
+                    </div>
+                    <!-- <div class="publication-item journal">
+                        <strong>Classification-augmented survival estimation (CASE): A novel method for individualized long-term survival prediction with application to liver transplantation</strong><br>
+                        Shourabizadeh H., Aleman D. M., Rousseau L. M., Zheng K., Bhat M.<br>
+                        PloS One<br>
+                        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0315928" target="_blank">Download & Cite</a>
+                    </div> -->
+                    <div class="publication-item conference">
+                        <strong>An approach for predicting employee churn by using data mining</strong><br>
+                        Yiğit I.O., Shourabizadeh H.<br>
+                        International Artificial Intelligence and Data Processing Symposium (IDAP)<br>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/8090324" target="_blank">Download & Cite</a>
+                    </div>
+                    <div class="publication-item conference">
+                        <strong>Machine Learning to Predict Graft Survival Following Liver Transplantation</strong><br>
+                        Zheng K., Shourabizadeh H., Aleman D. M., Rousseau L. M., Bhat M.<br>
+                        Transplantation<br>
+                        <a href="https://publications.polymtl.ca/56975/" target="_blank">Download & Cite</a>
+                    </div>
+                    <div class="publication-item work-in-progress">
+                        <li>
+                        <strong>Rethinking survival model evaluation: The limits of C-Index and the case for the area under the survival curve</strong><br>
+                        </li>
+                    </div>
+                    <div class="publication-item work-in-progress">
+                        <li>
+                        <strong>The economics of lapse: How machine learning can optimize policyholder retention in life insurance</strong><br>
+                        </li>
+                    </div>
+                    <div class="load-more">
+                        <button class="btn btn-secondary">Load More Publications</button>
+                    </div>
+                </div>
+            </section>
+            <section class="conference-section">
+                
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hamed Shourabizadeh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/publications.js"></script>
+</body>
+</html>

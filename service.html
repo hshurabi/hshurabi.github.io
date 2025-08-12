@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - Dr. Hamed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Dr. Hamed</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="awards.html">Awards</a></li>
+                    <li><a href="service.html" class="active">Service</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-content">
+            <div class="search-header">
+                <input type="text" placeholder="Search publications, research, and more..." id="searchInput">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <!-- Search results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="page-header">
+                <h1>Professional Service</h1>
+                <p>Contributing to the academic community through editorial, review, and organizational activities</p>
+            </section>
+
+            <section class="service-section">
+                <div class="service-category">
+                    <h2>Editorial Boards</h2>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Associate Editor</h3>
+                            <p class="service-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence</p>
+                            <p class="service-period">2022 - Present</p>
+                            <p class="service-description">Leading editorial decisions for one of the top-tier journals in AI and machine learning.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Editorial Board Member</h3>
+                            <p class="service-venue">Journal of Machine Learning Research</p>
+                            <p class="service-period">2021 - Present</p>
+                            <p class="service-description">Contributing to the peer review process and maintaining high standards for ML research publications.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-journal-whills"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Guest Editor</h3>
+                            <p class="service-venue">Nature Machine Intelligence - Special Issue on Quantum ML</p>
+                            <p class="service-period">2023</p>
+                            <p class="service-description">Organized and edited a special issue focusing on quantum machine learning applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h2>Conference Organization</h2>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Program Chair</h3>
+                            <p class="service-venue">International Conference on Machine Learning (ICML)</p>
+                            <p class="service-period">2024</p>
+                            <p class="service-description">Led the program committee for one of the premier ML conferences with over 5,000 submissions.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Area Chair</h3>
+                            <p class="service-venue">Neural Information Processing Systems (NeurIPS)</p>
+                            <p class="service-period">2020 - 2023</p>
+                            <p class="service-description">Coordinated review process for the machine learning theory and applications track.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Workshop Co-Organizer</h3>
+                            <p class="service-venue">Workshop on Quantum Machine Learning at AAAI</p>
+                            <p class="service-period">2022, 2023</p>
+                            <p class="service-description">Organized successful workshops bringing together quantum computing and ML researchers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h2>Professional Organizations</h2>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Board Member</h3>
+                            <p class="service-venue">International Machine Learning Society</p>
+                            <p class="service-period">2023 - Present</p>
+                            <p class="service-description">Serving on the governing board to shape the future of machine learning research globally.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Committee Member</h3>
+                            <p class="service-venue">ACM SIGAI Executive Committee</p>
+                            <p class="service-period">2021 - 2024</p>
+                            <p class="service-description">Contributing to strategic decisions for the AI community within ACM.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Awards Committee Chair</h3>
+                            <p class="service-venue">IEEE Computer Society Technical Achievement Award</p>
+                            <p class="service-period">2022 - Present</p>
+                            <p class="service-description">Leading the selection process for prestigious technical achievement awards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h2>University Service</h2>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Department Head Search Committee</h3>
+                            <p class="service-venue">Computer Science Department</p>
+                            <p class="service-period">2023</p>
+                            <p class="service-description">Participated in the selection process for the new department head.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Graduate Admissions Committee</h3>
+                            <p class="service-venue">Computer Science Department</p>
+                            <p class="service-period">2020 - 2022</p>
+                            <p class="service-description">Evaluated applications and helped select the next generation of graduate students.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Tenure Review Committee</h3>
+                            <p class="service-venue">University Faculty Senate</p>
+                            <p class="service-period">2021 - Present</p>
+                            <p class="service-description">Serving on committees for tenure and promotion decisions across multiple departments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h2>Grant Review Panels</h2>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Panel Member</h3>
+                            <p class="service-venue">National Science Foundation (NSF)</p>
+                            <p class="service-period">2019 - Present</p>
+                            <p class="service-description">Regular panelist for NSF programs in computer and information science and engineering.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Reviewer</h3>
+                            <p class="service-venue">Department of Energy (DOE)</p>
+                            <p class="service-period">2020 - Present</p>
+                            <p class="service-description">Evaluating proposals for quantum computing and AI research initiatives.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Study Section Member</h3>
+                            <p class="service-venue">National Institutes of Health (NIH)</p>
+                            <p class="service-period">2021 - 2024</p>
+                            <p class="service-description">Contributing expertise to biomedical informatics and computational biology grant reviews.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category">
+                    <h2>Community Outreach</h2>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>STEM Education Advocate</h3>
+                            <p class="service-venue">Local High Schools</p>
+                            <p class="service-period">2018 - Present</p>
+                            <p class="service-description">Regular guest lectures and mentoring programs to inspire the next generation of computer scientists.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-diversity"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Diversity & Inclusion Committee Chair</h3>
+                            <p class="service-venue">Computer Science Department</p>
+                            <p class="service-period">2020 - Present</p>
+                            <p class="service-description">Leading initiatives to improve diversity and inclusion in computer science education and research.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dr. Hamed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
