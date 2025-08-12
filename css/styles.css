@@ -772,3 +772,12 @@ a:hover {
   align-items: center;
   gap: 12px; /* Adjust spacing between icon and title */
 }
+
+/* Numbered list for publication */
+.publications-list {
+  padding-left: 1.5em;
+}
+
+.publication-item {
+  margin-bottom: 1.2em;
+}
