@@ -1,44 +1,4 @@
 
-// --- Site-wide Search Functionality ---
-let searchIndex = [];
-const searchInput = document.getElementById('searchInput');
-const searchResults = document.getElementById('searchResults');
-
-// Load the search index
-fetch('scripts/search-index.json')
-  .then(response => response.json())
-  .then(data => {
-    searchIndex = data;
-  });
-
-// Perform search and show results
-function performSearch(query) {
-  if (!searchIndex.length) {
-    searchResults.innerHTML = '<p style="padding: 1rem; color: var(--text-secondary); text-align: center;">Loading search index...</p>';
-    return;
-  }
-  const results = searchIndex.filter(item =>
-    item.title.toLowerCase().includes(query.toLowerCase()) ||
-    item.snippet.toLowerCase().includes(query.toLowerCase())
-  );
-  if (results.length === 0) {
-    searchResults.innerHTML = '<p style="padding: 1rem; color: var(--text-secondary); text-align: center;">No results found.</p>';
-    return;
-  }
-  searchResults.innerHTML = results.map(item => `
-    <a href="${item.url}" class="search-result-item">
-      <strong>${item.title}</strong>
-      <div style="font-size:0.95em;color:var(--text-secondary);">${item.snippet}</div>
-    </a>
-  `).join('');
-}
-
-// Listen for input in the search box
-if (searchInput) {
-  searchInput.addEventListener('input', function(e) {
-    performSearch(e.target.value);
-  });
-}
 
 $(document).ready(function() {
   AOS.init( {
