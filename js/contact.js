@@ -4,46 +4,52 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeFormValidation();
 });
 
-// function initializeContactForm() {
-//     const contactForm = document.getElementById('contactForm');
+function initializeContactForm() {
+    const contactForm = document.getElementById('contactForm');
     
-//     if (contactForm) {
-//         contactForm.addEventListener('submit', handleFormSubmission);
-//     }
-// }
+    if (contactForm) {
+        contactForm.addEventListener('submit', handleFormSubmission);
+    }
+}
 
-// function handleFormSubmission(e) {
-//     e.preventDefault();
-    
-//     const form = e.target;
-//     const formData = new FormData(form);
-//     const submitButton = form.querySelector('button[type="submit"]');
-    
-//     // Validate form
-//     if (!validateForm(form)) {
-//         return;
-//     }
-    
+function handleFormSubmission(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const submitButton = form.querySelector('button[type="submit"]');
+
+    // Validate form
+    if (!validateForm(form)) {
+        return;
+    }
+
     // Show loading state
     const originalButtonText = submitButton.innerHTML;
     submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
     submitButton.disabled = true;
-    
-    // Simulate form submission (in a real application, this would send to a server)
-    setTimeout(() => {
-        // Show success message
-        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-        
-        // Reset form
-        form.reset();
-        
-        // Reset button
+
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+            form.reset();
+            clearValidationStates(form);
+        } else {
+            showNotification('There was an error sending your message. Please try again.', 'error');
+        }
         submitButton.innerHTML = originalButtonText;
         submitButton.disabled = false;
-        
-        // Clear validation states
-        clearValidationStates(form);
-    }, 2000);
+    }).catch(() => {
+        showNotification('There was an error sending your message. Please try again.', 'error');
+        submitButton.innerHTML = originalButtonText;
+        submitButton.disabled = false;
+    });
 }
 
 function validateForm(form) {
