@@ -508,7 +508,7 @@ a:hover {
 }
 
   .course-list {
-    padding-left: 20px;   /* Optional: ensure proper indenting */
+    padding-left: 20px;  /* Indents the list for better structure */
 }
 
   .semester-section {
