@@ -164,3 +164,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.opacity = '1';
     }, 50);
 });
+
+// Hamburger menu functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.getElementById('hamburgerMenu');
+  const navMenu = document.querySelector('.nav-menu ul');
+  hamburger.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+  });
+});

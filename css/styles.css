@@ -653,11 +653,15 @@ a:hover {
 }
 
 .contact-form label,
-.contact-form-section h2,
 .contact-form .form-group label {
   font-weight: 600;
   margin-bottom: 6px;
   color: #000 !important;
+}
+.contact-form-section h2 {
+  font-weight: 600;
+  margin-bottom: 6px;
+  /* No forced color here, so it follows the theme */
 }
 .contact-form .form-group input,
 .contact-form .form-group select,
@@ -693,5 +697,43 @@ a:hover {
   .contact-form {
     max-width: 100%;
     padding: 24px 10px;
+  }
+}
+
+/* Phone view hamberger menu */
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  align-items: center;
+  margin-right: 1rem;
+}
+
+/* Mobile nav hidden by default */
+@media (max-width: 768px) {
+  .nav-menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px; /* adjust based on header height */
+    left: 0;
+    width: 100%;
+    background: var(--bg-primary);
+    box-shadow: var(--shadow-lg);
+    z-index: 999;
+    padding: 1rem 0;
+  }
+  .nav-menu ul.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .header .container {
+    position: relative;
   }
 }
