@@ -31,6 +31,14 @@ themeToggle.addEventListener('click', () => {
 });
 
 // Search functionality
+let searchIndex = [];
+
+fetch('search-index.json')
+  .then(response => response.json())
+  .then(data => {
+    searchIndex = data;
+  });
+
 const searchBtn = document.getElementById('searchBtn');
 const searchModal = document.getElementById('searchModal');
 const searchClose = document.getElementById('searchClose');
@@ -51,37 +59,24 @@ function closeSearchModal() {
 }
 
 function performSearch(query) {
-    // Get all publication and research items
-    const publicationItems = document.querySelectorAll('.publication-item');
-    const researchAreas = document.querySelectorAll('.area-card');
-
-    let found = false;
-
-    // Hide all items first
-    publicationItems.forEach(item => {
-        if (item.textContent.toLowerCase().includes(query.toLowerCase())) {
-            item.style.display = 'list-item';
-            found = true;
-        } else {
-            item.style.display = 'none';
-        }
-    });
-
-    researchAreas.forEach(area => {
-        if (area.textContent.toLowerCase().includes(query.toLowerCase())) {
-            area.style.display = '';
-            found = true;
-        } else {
-            area.style.display = 'none';
-        }
-    });
-
-    // Show a message if nothing found
-    if (!found) {
-        searchResults.innerHTML = '<p style="padding: 1rem; color: var(--text-secondary); text-align: center;">No results found.</p>';
-    } else {
-        searchResults.innerHTML = '';
+    if (!searchIndex.length) {
+        searchResults.innerHTML = '<p style="padding: 1rem; color: var(--text-secondary); text-align: center;">Loading search index...</p>';
+        return;
     }
+    const results = searchIndex.filter(item =>
+        item.title.toLowerCase().includes(query.toLowerCase()) ||
+        item.snippet.toLowerCase().includes(query.toLowerCase())
+    );
+    if (results.length === 0) {
+        searchResults.innerHTML = '<p style="padding: 1rem; color: var(--text-secondary); text-align: center;">No results found.</p>';
+        return;
+    }
+    searchResults.innerHTML = results.map(item => `
+        <a href="${item.url}" class="search-result-item">
+            <strong>${item.title}</strong>
+            <div style="font-size:0.95em;color:var(--text-secondary);">${item.snippet}</div>
+        </a>
+    `).join('');
 }
 
 // Event listeners

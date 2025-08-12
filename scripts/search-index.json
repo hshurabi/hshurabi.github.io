@@ -1,0 +1,22 @@
+[
+    {
+    "title": "Home",
+    "snippet": "Learn more about my background and research interests...",
+    "url": "index.html"
+    },
+    {
+    "title": "Research Areas",
+    "snippet": "Explore my research areas including machine learning, optimization, and more...",
+    "url": "research.html"
+    },
+    {
+    "title": "Publications",
+    "snippet": "A list of my publications...",
+    "url": "publications.html"
+    },
+    {
+        "title":"Teaching",
+        "snippet":"Information about my teaching experience and courses...",
+        "url":"teaching.html"
+    }
+]

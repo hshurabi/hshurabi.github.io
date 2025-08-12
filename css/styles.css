@@ -245,7 +245,17 @@ a:hover {
   max-height: 50vh;
   overflow-y: auto;
 }
-
+.search-result-item {
+  display: block;
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s;
+}
+.search-result-item:hover {
+  background: #f0f4fa;
+}
 /* Main Content */
 .main-content {
   min-height: calc(100vh - 200px);
