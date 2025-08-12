@@ -19,14 +19,14 @@ function initializePublicationFilters() {
             // Filter publications
             publicationItems.forEach(item => {
                 if (filterValue === 'all') {
-                    item.style.display = 'block';
+                    item.style.display = 'list-item';
                     item.style.opacity = '0';
                     setTimeout(() => {
                         item.style.opacity = '1';
                     }, 100);
                 } else {
                     if (item.classList.contains(filterValue)) {
-                        item.style.display = 'block';
+                        item.style.display = 'list-item';
                         item.style.opacity = '0';
                         setTimeout(() => {
                             item.style.opacity = '1';
