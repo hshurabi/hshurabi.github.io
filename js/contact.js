@@ -4,25 +4,25 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeFormValidation();
 });
 
-function initializeContactForm() {
-    const contactForm = document.getElementById('contactForm');
+// function initializeContactForm() {
+//     const contactForm = document.getElementById('contactForm');
     
-    if (contactForm) {
-        contactForm.addEventListener('submit', handleFormSubmission);
-    }
-}
+//     if (contactForm) {
+//         contactForm.addEventListener('submit', handleFormSubmission);
+//     }
+// }
 
-function handleFormSubmission(e) {
-    e.preventDefault();
+// function handleFormSubmission(e) {
+//     e.preventDefault();
     
-    const form = e.target;
-    const formData = new FormData(form);
-    const submitButton = form.querySelector('button[type="submit"]');
+//     const form = e.target;
+//     const formData = new FormData(form);
+//     const submitButton = form.querySelector('button[type="submit"]');
     
-    // Validate form
-    if (!validateForm(form)) {
-        return;
-    }
+//     // Validate form
+//     if (!validateForm(form)) {
+//         return;
+//     }
     
     // Show loading state
     const originalButtonText = submitButton.innerHTML;
